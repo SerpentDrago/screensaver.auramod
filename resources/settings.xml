@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="General">
+        <setting type="action" id="screensaver.auramod.name" label="Choose path to use" option="close" action="RunScript(screensaver.auramod, mode=choose)" />
+    </category>
+</settings>
+
