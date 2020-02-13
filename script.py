@@ -32,7 +32,7 @@ if __name__ == '__main__':
                 '&skinWidgetPath=screensaver.auramod.path)')
         xbmc.executebuiltin(call, wait=True)
         
-    if get_params() == ['mode', 'tvchoose']:
+    elif get_params() == ['mode', 'tvchoose']:
         call = ('RunScript(script.skinshortcuts,'
                 'type=widgets'
                 '&showNone=False'
