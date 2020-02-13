@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="screensaver.auramod" name="Auramod Screensaver" version="1.1.2" provider-name="auramod, robwebset">
-	<requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.simplejson" version="3.3.0"/>
-	</requires>
-	<extension point="xbmc.ui.screensaver" library="default.py"/>
-  	<extension point="xbmc.python.script" library="default.py" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Auramod Screensaver</summary>
-		<description lang="en">Screensaver that displays the AuraMod fanart screensaver. All credit to robwebset for his weatherscreensaver that this addon is modified from </description>
-		<language></language>
-		<platform>all</platform>
-		<license>See LICENSE.txt</license>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<banner>resources/banner.jpg</banner>
-			<logo>resources/logo.png</logo>
-		</assets>
-	</extension>
+<addon id="screensaver.auramod" name="AuraMOD Screensaver" version="100.5.0" provider-name="drinfernoo">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+    </requires>
+    
+    <extension point="xbmc.ui.screensaver" library="default.py"/>
+    
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">AuraMOD Screensaver</summary>
+        <description lang="en">Special screensaver just for AuraMOD.</description>
+        <platform>all</platform>
+        <license>See LICENSE.txt</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
