@@ -32,5 +32,17 @@ if __name__ == '__main__':
                 '&skinWidgetPath=screensaver.auramod.path)')
         xbmc.executebuiltin(call, wait=True)
         
+    if get_params() == ['mode', 'tvchoose']:
+        call = ('RunScript(script.skinshortcuts,'
+                'type=widgets'
+                '&showNone=False'
+                '&skinWidgetName=screensaver.auramod.tvname'
+                '&skinWidgetPath=screensaver.auramod.tvpath)')
+        xbmc.executebuiltin(call, wait=True)
+
         name = xbmc.getInfoLabel('Skin.String(screensaver.auramod.name')
         _addon.setSettingString('screensaver.auramod.name', name)
+
+        tvname = xbmc.getInfoLabel('Skin.String(screensaver.auramod.tvname')
+        _addon.setSettingString('screensaver.auramod.tvname', tvname)
+
