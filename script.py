@@ -4,6 +4,7 @@ import xbmcaddon
 
 import os
 import sys
+import time
 
 _addon = xbmcaddon.Addon()
 _id = _addon.getAddonInfo('id').decode('utf-8')
@@ -24,7 +25,7 @@ def wait_for_string(string, shortcut):
 
 
 def get_params():
-    for arg in [x for x in sys.argv if 'script.py' not in arg]:
+    for arg in [x for x in sys.argv if 'script.py' not in x]:
         if '=' in arg:
             arg_split = arg.split('=', 1)
             
